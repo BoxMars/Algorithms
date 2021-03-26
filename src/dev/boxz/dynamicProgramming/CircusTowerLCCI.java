@@ -1,4 +1,4 @@
-package dev.boxz.DynamicProgramming;
+package dev.boxz.dynamicProgramming;
 
 import java.util.Arrays;
 
@@ -57,7 +57,7 @@ class Person{
         this.weight = weight;
     }
 
-    public static Person[] sortHeight(Person[] people){
+    public static void sortHeight(Person[] people){
         for (int i=0;i< people.length-1;i++){
             for (int j=i+1;j< people.length;j++){
                 if (people[j].height<people[i].height){
@@ -67,6 +67,5 @@ class Person{
                 }
             }
         }
-        return people;
     }
 }

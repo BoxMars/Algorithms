@@ -1,9 +1,9 @@
-package dev.boxz.DynamicProgramming;
+package dev.boxz.dynamicProgramming;
 
 import java.util.Scanner;
 
 public class JillRidesAgain {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Scanner in=new Scanner(System.in);
         int num=in.nextInt ();
         String answer="";
