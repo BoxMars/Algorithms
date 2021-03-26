@@ -1,11 +1,14 @@
-/**
- * https://leetcode-cn.com/problems/longest-palindromic-substring/
- */
 package dev.boxz.DynamicProgramming;
 
 import java.util.Arrays;
 
 public class LongestPalindromicSubstring {
+
+    /**
+     * @see <a href="https://leetcode-cn.com/problems/longest-palindromic-substring/">LongestPalindromicSubstring</a>
+     * @param s String
+     * @return answer
+     */
     public static String SolutionOne(String s){
         int len=s.length ();
         int[] res=new int[len];

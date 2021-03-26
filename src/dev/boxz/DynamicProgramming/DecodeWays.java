@@ -1,10 +1,12 @@
-/**
- * https://leetcode-cn.com/problems/decode-ways/
- */
-
 package dev.boxz.DynamicProgramming;
 
 public class DecodeWays {
+
+    /**
+     * @see <a href="https://leetcode-cn.com/problems/decode-ways"/>DecodeWays</a>
+     * @param s String
+     * @return answer
+     */
     public static int Solution(String s){
         int[] dp=new int[s.length ()];
         if (s.charAt (0)=='0'){

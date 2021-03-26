@@ -1,10 +1,13 @@
-/**
- * https://leetcode-cn.com/problems/continuous-subarray-sum/
- */
-
 package dev.boxz.DynamicProgramming;
 
 public class ContinuousSubarraySum {
+
+    /**
+     * @see <a href="https://leetcode-cn.com/problems/continuous-subarray-sum/">ContinuousSubarraySum</a>
+     * @param nums array
+     * @param k int
+     * @return answer
+     */
     public static boolean Solution(int[] nums, int k){
         int[] sum = new int[nums.length+1];
         sum[0]=0;

@@ -1,19 +1,21 @@
-/**
- * https://leetcode-cn.com/problems/circus-tower-lcci/
- */
-
 package dev.boxz.DynamicProgramming;
 
 import java.util.Arrays;
 
 public class CircusTowerLCCI {
+    /**
+     * @see <a href="https://leetcode-cn.com/problems/circus-tower-lcci/">CircusTowerLCCI</a>
+     * @param height array
+     * @param weight array
+     * @return answer
+     */
     public static int Solution(int[] height, int[] weight) {
         Person[] people= new Person[height.length];
         for (int i=0;i<height.length;i++){
             Person person=new Person (height[i],weight[i]);
             people[i]=person;
         }
-        people=Person.sortHeight(people);
+        Person.sortHeight(people);
         int[] dp=new int[height.length];
         Arrays.fill (dp,1);
         int max=1;
