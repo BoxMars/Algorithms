@@ -1,4 +1,4 @@
-package dev.boxz.dynamicProgramming;
+package dev.boxz;
 
 import java.util.Arrays;
 
