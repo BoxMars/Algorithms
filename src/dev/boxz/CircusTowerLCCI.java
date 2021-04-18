@@ -31,39 +31,40 @@ public class CircusTowerLCCI {
 
         return max;
     }
-}
-class Person{
-    private int height;
-    private int weight;
 
-    public int getHeight () {
-        return height;
-    }
+    static class Person{
+        private int height;
+        private int weight;
 
-    public void setHeight (int height) {
-        this.height = height;
-    }
+        public int getHeight () {
+            return height;
+        }
 
-    public int getWeight () {
-        return weight;
-    }
+        public void setHeight (int height) {
+            this.height = height;
+        }
 
-    public void setWeight (int weight) {
-        this.weight = weight;
-    }
+        public int getWeight () {
+            return weight;
+        }
 
-    public Person (int height, int weight) {
-        this.height = height;
-        this.weight = weight;
-    }
+        public void setWeight (int weight) {
+            this.weight = weight;
+        }
 
-    public static void sortHeight(Person[] people){
-        for (int i=0;i< people.length-1;i++){
-            for (int j=i+1;j< people.length;j++){
-                if (people[j].height<people[i].height){
-                    Person t=people[i];
-                    people[i]=people[j];
-                    people[j]=t;
+        public Person (int height, int weight) {
+            this.height = height;
+            this.weight = weight;
+        }
+
+        public static void sortHeight(Person[] people){
+            for (int i=0;i< people.length-1;i++){
+                for (int j=i+1;j< people.length;j++){
+                    if (people[j].height<people[i].height){
+                        Person t=people[i];
+                        people[i]=people[j];
+                        people[j]=t;
+                    }
                 }
             }
         }
