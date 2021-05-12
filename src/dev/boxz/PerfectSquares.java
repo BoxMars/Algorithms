@@ -1,6 +1,5 @@
 package dev.boxz;
 
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -16,7 +15,6 @@ public class PerfectSquares {
     public int Solution(int n){
         Queue<Integer> queue=new LinkedList ();
         queue.add (n);
-        HashSet<Integer> isSqrtSet=new HashSet<> ();
         int ans=0;
         while (!queue.isEmpty ()){
             int length=queue.size ();
